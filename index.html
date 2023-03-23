@@ -21,25 +21,29 @@
         <a href="./index.html">
           <img src="./assets/logo.svg" alt="logo" />
         </a>
-        <a class="rounded-full bg-fg-black py-3 px-7 text-fg-light-cream" href="./index.html">Free Consultant</a>
+        <a class="rounded-full bg-fg-black py-3 px-7 text-fg-light-cream text-[14px] transition-all duration-500 hover:bg-fg-galactic-blue" href="./index.html">Free Consultant</a>
       </div>
       <div class="pt-10 pb-4">
-        <h1 class="text-[36px] font-bold text-center lg:leading-[70px]">Design solutions made easy</h1>
-        <p class="text-fg-medium-brown text-center py-4 text-[16px] leading-7">With over ten years of experience in various design
+        <h1 class="text-[36px] md:text-[44px] font-bold text-center lg:leading-[70px]">Design solutions made easy</h1>
+        <p class="text-fg-medium-brown text-center py-4 text-[16px] md:text-fg-body md:px-16 leading-7">With over ten years of experience in various design
           disciplines, I’m your one-stop shop for your design needs.</p>
       </div>
     </header>
+  </div>
+
+    <div class="container py-4 px-6 mx-auto">
     <main>
       <!-- CARDS -->
-      <div class="pb-12">
-
-        <div class="bg-fg-galactic-blue rounded-md p-5 mb-4">
-          <div>
+      <div class="pb-12 md:flex md:flex-wrap">
+      <div class="md:flex w-full gap-6">
+        <div class="bg-fg-galactic-blue rounded-md p-5 mb-4 md:w-6/12 md:flex md:flex-col md:justify-between">
+          <div class="md:w-full">
             <img aria-hidden="true" class="ml-auto" src="./assets/pattern-graphic-design.svg" alt="graphic design">
           </div>
           <p class="text-white text-[24px] pt-20">Graphic Design</p>
         </div>
-        <div class="flex flex-col justify-between">
+
+        <div class="flex flex-col justify-between md:w-6/12">
           <div class="flex gap-6">
             <div class="bg-fg-summer-yellow rounded-md p-5 mb-4 w-6/12">
               <div>
@@ -62,43 +66,72 @@
             <p class="text-white text-[24px] pt-10">Illustrations</p>
           </div>
         </div>
-        <div>
-          <div class="bg-fg-cyan rounded-md p-5 mb-4 w-full">
+      </div>
+        <div class="md:flex md:w-full gap-6">
+          <div class="bg-fg-cyan rounded-md p-5 mb-4 w-full md:w-6/12">
             <div>
               <img aria-hidden="true" class="ml-auto" src="./assets/pattern-photography.svg" alt="photography">
             </div>
             <p class="text-white text-[24px] pt-10">Photography</p>
           </div>
-          <div class="bg-fg-dark-purple rounded-md p-5 mb-4 w-full">
+          <div class="bg-fg-dark-purple rounded-md p-5 mb-4 w-full  md:w-6/12">
             <div>
               <img aria-hidden="true" class="ml-auto" src="./assets/pattern-motion-graphics.svg" alt="motion">
             </div>
             <p class="text-white text-[24px] pt-10">Motion Graphic</p>
           </div>
         </div>
-       
-
       </div>
 
       <!-- who I am -->
-      <section>
-        <div>
-          <img src="./assets/image-amy.webp" alt="">
+      <section class="md:flex lg:justify-between pt-24">
+        <div class="lg:w-5/12">
+          <img class="md:relative -left-16 lg:left-0 " src="./assets/image-amy.webp" alt="amy">
         </div>
-        <div class="pt-7 text-center">
-          <h2 class="text-[26px]">I’m Amy, and I’d love to work on your next project</h2>
-          <p class="text-fg-medium-brown mt-4 text-[16px] leading-7">I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations 
+        <div class="pt-7 text-center md:text-left md:w-10/12 lg:w-6/12">
+          <h2 class="text-[26px] font-bold md:text-fg-headS">I’m Amy, and I’d love to work on your next project</h2>
+          <p class="text-fg-medium-brown mt-4 text-[16px] leading-7 md:text-fg-body">I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations 
             to complete mobile apps. I’m also handy with a camera!</p>
-          <a class="inline-block rounded-full bg-fg-light-red py-3 px-7 text-fg-light-cream text-[14px] my-6" href="./index.html">Free Consultantion</a>
+          <a class="inline-block rounded-full bg-fg-light-red py-3 px-7 text-fg-light-cream text-[14px] md:text-[16px] my-6 transition-all duration-500 hover:bg-fg-summer-yellow" href="./index.html">Free Consultantion</a>
         </div>
+      </section>
+    </div>
+      <!-- my work -->
+      <section class="w-full mt-10 mb-4 pt-12">
+        <h2 class="text-center font-bold text-[24px]">My Work</h2>
+          <div class="flex overflow-x-auto gap-4 p-8" id="slider"></div>
+          <div id="sliderButtons" class="flex justify-center items-center gap-2 mt-4">
+            <button id="prev" class="text-white p-4 bg-fg-black rounded-full w-[50px] h-[50px] grid place-items-center transition-all duration-500 hover:bg-fg-galactic-blue"><i class="fa-solid fa-arrow-left"></i></button>
+            <button id="next" class="text-white p-4 bg-fg-black rounded-full w-[50px] h-[50px] grid place-items-center transition-all duration-500 hover:bg-fg-galactic-blue"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
       </section>
 
-      <!-- my work -->
-      <section>
-        
-      </section>
+      <!-- CTA -->
+      <div class="container py-4 px-6 mx-auto">
+        <section>
+          <div class="bg-fg-black text-fg-light-cream rounded-lg text-center px-4 py-8">
+            <h2 class="text-[26px] font-bold">Book a call with me</h2>
+            <p class="text-[16px] leading-[26px] px-6 py-5"> I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a 
+              free consultation. Then we can move forward from there.</p>
+              <a class="inline-block rounded-full bg-fg-light-red py-3 px-7 text-fg-light-cream text-[14px] my-6 transition-all duration-500 hover:bg-fg-summer-yellow" href="./index.html">Free Consultantion</a>
+          </div>
+        </section>
+      </div>
+
     </main>
-  </div>
+    <footer>
+
+      <div class="container p-6 mx-auto">
+      <div class="w-full flex items-center justify-between">
+        <a href="./index.html">
+          <img src="./assets/logo.svg" alt="logo" />
+        </a>
+        <a class="rounded-full bg-fg-black py-3 px-7 text-fg-light-cream text-[14px] transition-all duration-500 hover:bg-fg-galactic-blue" href="./index.html">Free Consultant</a>
+      </div>
+      </div>
+
+    </footer>
+ 
   <script src="./js/index.js"></script>
 </body>
 
