@@ -54,11 +54,7 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-# Obsessed with this function I create
+### Obsessed with this function I create
 
 ```js
 /* Creates a new HTML element with an object in input */
@@ -80,7 +76,7 @@ function createChildFromObject(props) {
 
 ```
 
-# Love the adjustment in the slider of image for trying to have always the selected one in the center
+### Love the adjustment in the slider of image for trying to have always the selected one in the center
 
 ```js
 let position;
