@@ -95,21 +95,14 @@ function updateSlider() {
   } else if (currentImage === images.length - 1) {
     position = imageWidth * images.length;
   } else {
-
     position = (
       (imageWidth * currentImage) + (sliderGap * currentImage)
       - (((sliderWidth - imageWidth) / 2) - (sliderGap * 2))
     );
   }
-  console.log(sliderWidth);
-  console.log(imageWidth);
-  console.log((sliderWidth - imageWidth) / 2)
     slider.scrollTo({
       left: position,
       behavior: "smooth",
     });
 }
-
-
-
 })();
