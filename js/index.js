@@ -70,6 +70,11 @@ prevBtn.addEventListener('click', prevImage);
 const nextBtn = document.getElementById('next')
 nextBtn.addEventListener('click', nextImage);
 
+window.addEventListener('keydown', (event) => {
+  (event.key === 'ArrowRight') && nextImage();
+  (event.key === 'ArrowLeft') && prevImage();
+});
+
 function prevImage() {
   currentImage = (currentImage === 0) ? images.length - 1 : currentImage - 1;
   updateSlider();
