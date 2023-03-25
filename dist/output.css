@@ -559,21 +559,6 @@ video {
   margin-bottom: 1.5rem;
 }
 
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.my-12 {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -757,11 +742,6 @@ video {
   padding-bottom: 2rem;
 }
 
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -774,20 +754,20 @@ video {
   padding-top: 2.5rem;
 }
 
-.pt-20 {
-  padding-top: 5rem;
-}
-
-.pt-7 {
-  padding-top: 1.75rem;
-}
-
 .pt-12 {
   padding-top: 3rem;
 }
 
+.pt-20 {
+  padding-top: 5rem;
+}
+
 .pt-24 {
   padding-top: 6rem;
+}
+
+.pt-7 {
+  padding-top: 1.75rem;
 }
 
 .text-center {
@@ -859,40 +839,6 @@ video {
   transition-duration: 500ms;
 }
 
-@media (min-width: 1024px) {
-  .lg\:container {
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 1rem;
-    padding-left: 1rem;
-  }
-
-  @media (min-width: 600px) {
-    .lg\:container {
-      max-width: 600px;
-    }
-  }
-
-  @media (min-width: 728px) {
-    .lg\:container {
-      max-width: 728px;
-    }
-  }
-
-  @media (min-width: 984px) {
-    .lg\:container {
-      max-width: 984px;
-    }
-  }
-
-  @media (min-width: 1200px) {
-    .lg\:container {
-      max-width: 1200px;
-    }
-  }
-}
-
 .hover\:bg-fg-galactic-blue:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(117 92 222 / var(--tw-bg-opacity));
@@ -922,6 +868,10 @@ video {
 
   .md\:w-full {
     width: 100%;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
   }
 
   .md\:flex-col {
@@ -975,16 +925,48 @@ video {
     width: 41.666667%;
   }
 
-  .lg\:w-8\/12 {
-    width: 66.666667%;
-  }
-
   .lg\:w-6\/12 {
     width: 50%;
   }
 
+  .lg\:w-8\/12 {
+    width: 66.666667%;
+  }
+
+  .lg\:w-full {
+    width: 100%;
+  }
+
+  .lg\:min-w-full {
+    min-width: 100%;
+  }
+
+  .lg\:flex-col {
+    flex-direction: column;
+  }
+
+  .lg\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
   .lg\:justify-between {
     justify-content: space-between;
+  }
+
+  .lg\:gap-4 {
+    gap: 1rem;
+  }
+
+  .lg\:gap-2 {
+    gap: 0.5rem;
+  }
+
+  .lg\:pl-4 {
+    padding-left: 1rem;
+  }
+
+  .lg\:pl-6 {
+    padding-left: 1.5rem;
   }
 
   .lg\:leading-\[70px\] {
